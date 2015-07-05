@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+  <title>My Robot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="intermediate.html">Intermediate Robot</a>
+    <h1>Advanced Robot</h1>
+    <a href="#"></a>
+  </header>
+
+  <h2 id="control-toggle">Controls</h2>
+  <div class="control-panel">
+    <p> Basic Controls:
+      <button class="flash">laser eyes on/off</button>
+      <button class="color">change color!</button>
+      <button class="moves">dance/break</button>
+      <button class="hide">hide/show</button>
+    </p>
+    <p> Movement:
+      <button class="mv-left">Move left</button>
+      <button class="mv-right">Move right</button>
+      <button class="mv-up">Move up</button>
+      <button class="mv-down">Move down</button>
+    </p>
+    <p> Robot Color:
+      <button id="color-original">Original</button>
+      <button id="color-green">Green</button>
+      <button id="color-yellow">Yellow</button>
+    </p>
+  </div>
+
+  <h2 id="custom-toggle">Customize</h2>
+  <form class="custom-panel">
+    <p>
+      <label for="bot-name">Robot Name:</label>
+      <input type="text" name="bot-name">      
+    </p>
+    <p>
+      <label for="db-image">
+        Dance/Break Image
+      </label>
+      <select name="db-img">
+        <option 
+          value="http://media.giphy.com/media/re25yMLCrLxhC/giphy.gif">
+          Sherlock Approves
+        </option>
+        <option 
+          value="http://media.giphy.com/media/vY0Lr03C7WNHO/giphy.gif">
+          Asian Dancers
+        </option>
+      </select>
+      <!-- <input type="text" name="db-img"> -->
+    </p>
+    <input type="submit">
+  </form>
+
+  <h2 id="robot-name">My Bot</h2>
+
+  <div class="robot">
+    <div class="beep"></div>
+    <div class="brain"></div>
+    <div class="torso">
+      <div class="left">j</div>
+      <div class="right">j</div>
+    </div>
+    <div class="foot"></div>
+  </div>    
+
+  <img class="db-img" src="http://media.giphy.com/media/vY0Lr03C7WNHO/giphy.gif">
+
+</body>
